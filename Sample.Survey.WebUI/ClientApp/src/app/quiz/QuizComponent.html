@@ -1,0 +1,23 @@
+﻿<form class="padding-20" (ngSubmit)="save()" [formGroup]="quizForm" enctype="multipart/form-data">
+    <mat-card fxLayout="column" class="formcard" style="width:50%">
+        <mat-card-title> Item </mat-card-title>
+        <div fxLayout="column" layout-wrap layout-padding class="layout-padding">
+            <mat-form-field class="fx-input name" autofocus>
+                        <input matInput placeholder="Quiz Id" formControlName="id" required>                        
+            </mat-form-field>
+            <mat-form-field class="fx-input name" autofocus>
+                <input matInput placeholder="Quiz Name" formControlName="quizName" required>                
+            </mat-form-field>           
+            <mat-form-field class="fx-input name" autofocus>
+                <input matInput placeholder="Quiz Unique Name" formControlName="quizUniqueName" required>                
+            </mat-form-field>
+            <mat-form-field class="fx-input name" autofocus>
+                <input matInput placeholder="Quiz Link" formControlName="quizLink" required>                
+            </mat-form-field>
+        </div>
+    </mat-card>
+    <div fxLayout="row" style="margin-left:50%">
+        <button class="save" md-button type="submit">Save</button>
+        <button class="cancel" md-button (click)="cancel()">Cancel</button>        
+    </div>
+</form>

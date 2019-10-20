@@ -1,0 +1,18 @@
+<form novalidate (ngSubmit)="validate()" [formGroup]="loginForm">
+  <div fxLayout="row" class="login loginForm" fxLayoutAlign="center center">
+    <div flex fxLayout="column" class="matDiv">
+      <div fxLayout="column" class="loginlogo logoDiv">
+        <img class="login-image" src="../../assets/images/agility-logo.png" />
+      </div>
+      <div fxLayout="column">
+        <mat-form-field>
+          <input matInput placeholder="User Name" formControlName="userName" [formGroup]="loginForm">
+        </mat-form-field>
+        <mat-form-field>
+          <input matInput type="password" placeholder="Password" formControlName="userPassword" [formGroup]="loginForm" required>
+        </mat-form-field>
+        <button matButton [disabled]="!loginForm.valid" mat-raised-button color="primary" type="submit" style="padding: 4px;background: #f3b64c;color: white; width: 35%; border-width: 0;">Login</button>
+      </div>
+    </div>
+  </div>
+</form>

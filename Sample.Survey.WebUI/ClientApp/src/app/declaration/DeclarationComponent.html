@@ -1,0 +1,57 @@
+
+<form class="padding-20" novalidate [formGroup]="serviceDocument.dataProfile.profileForm" enctype="multipart/form-data">
+  <mat-card fxLayout="column" class="formcard" style="width:100%">
+    <mat-card-title> Item </mat-card-title>
+    <div fxLayout="column" layout-wrap layout-padding class="layout-padding">
+      <mat-form-field class="fx-input name" autofocus>
+        <input matInput placeholder="Declaration No" formControlName="declarationsNo" required>
+      </mat-form-field>
+
+      <!--<mat-form-field class="fx-input name" autofocus *fxPermission="this.fxContext;Claim:'Inspector';ClaimType:'RoleClaim'">
+    <input matInput placeholder="Designation" formControlName="designation">
+    <mat-error *ngIf="serviceDocument.dataProfile.profileForm.controls.designation.errors !== null">
+      Designation is <strong>required</strong>
+    </mat-error>
+  </mat-form-field>-->
+      <mat-form-field>
+        <mat-select placeholder="Port Of Origin" [formGroup]="serviceDocument.dataProfile.profileForm"
+                    formControlName="portOfOriginId" style="width:40%">
+          <mat-option *ngFor="let optionObject of locationData" [value]="optionObject.locationId">
+            {{optionObject.locationName}}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+      <mat-form-field>
+        <mat-select placeholder="Port Of Destination" [formGroup]="serviceDocument.dataProfile.profileForm"
+                    formControlName="portOfDestinationId" style="width:40%">
+          <mat-option *ngFor="let optionObject of locationData" [value]="optionObject.locationId">
+            {{optionObject.locationName}}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+
+      <mat-form-field>
+        <mat-select placeholder="Toppings" multiple formControlName="multiSelectMember" [formGroup]="serviceDocument.dataProfile.profileForm">
+          <mat-option *ngFor="let topping of toppingList" [value]="topping">{{topping}}</mat-option>
+        </mat-select>
+      </mat-form-field>
+
+      <!--<mat-form-field>
+        <mat-select placeholder="Toppings" multiple [formGroup]="serviceDocument.dataProfile.profileForm">
+          <mat-option *ngFor="let topping of toppingList; let i =index" [value]="topping">
+            <mat-checkbox [checked]="selected === i" (change)="onChange(topping);selected = i"> {{topping}}</mat-checkbox>
+          </mat-option>
+        </mat-select>
+      </mat-form-field>-->
+
+    </div>
+  </mat-card>
+  <div fxLayout="row" class="padding-left-10 padding-right-10">
+    <!--<fx-button-list [allowedActions]="serviceDocument.dataProfile.actionService.allowedActions" (fxClick)="submit()" [formGroup]="serviceDocument.dataProfile.profileForm"></fx-button-list>-->
+    <button *ngFor="let action of serviceDocument.dataProfile.actionService.allowedActions" class="fx-button {{action.transitionClaim}}" mat-button
+            (click)="submit(action.transitionClaim)">
+      <span>{{action.actionName}}</span>
+    </button>
+    <button class="btn-grey" mat-button (click)="cancel()">Cancel</button>
+  </div>
+</form>

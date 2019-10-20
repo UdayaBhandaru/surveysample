@@ -1,0 +1,58 @@
+<div fxLayout="column" fxFlex>
+    <div class="top-bar" fxLayout="row" fxLayoutAlign="start center" *ngIf="fxContext.IsAuthenticated" fxFlex="initial">
+        <span class="logoheader" fxLayout="column" fxLayoutAlign="center center"><img class="logo" src="../assets/images/agility-logo-white.png" /></span>
+        <div class="app-title">
+            Learning Management System
+        </div>
+        <div fxFlex></div>
+        <div class="top-bar-right" fxLayout="row" fxLayoutAlign="end center">
+            <div>
+                <a routerLink="/Home" href="#" class="home-icon">
+                    <!--<img src="../images/tools/home.svg" />-->
+                </a>
+            </div>
+
+            <span class="devider"></span>
+            <div class="profilename" fxLayout="row" fxLayoutAlign="end center">
+                <img class="user-photo" src="../assets/images/no-image.png" />
+                <span>{{fxContext.userProfile.name}}</span>
+            </div>
+            <span class="devider"></span>
+            <button matButton (click)="logout()" class="logout"> <mat-icon></mat-icon></button>
+
+            <!--<a routerLink="/Account" fxLayout="column" fxLayoutAlign="center center" class="logout">
+                <mat-icon></mat-icon>
+            </a>-->
+        </div>
+    </div>
+    <div fxLayout="row" fxFlex>
+        <div id="mainNavBar" class="left-bar overflow-auto" *ngIf="fxContext.IsAuthenticated" fxFlex="none" style="width:220px;height: 100%;">
+            <div class="menu-item" *ngFor="let menu of fxContext.userProfile.menus">
+                <a routerLink="{{menu.url}}" routerLinkActive="active" (click)="selected = menu.menuText" fxLayoutAlign="start center">
+                    
+                    <span>{{menu.menuText}}</span>
+                </a>
+                <ng-template>
+                    <a href="{{menu.url}}">
+                       
+                        <span>{{menu.menuText}}</span>
+                    </a>
+                </ng-template>
+            </div>
+        </div>
+        <div class="main-content overflow-auto" fxFlex>
+            <router-outlet>
+                <div *ngIf="showLoader" class="spinner-bg" fxLayout="column" fxLayoutAlign="center center">
+                    <mat-spinner color="primary"></mat-spinner>
+                </div>
+                <!--<div class="showbox" fxLayoutAlign="center center" *ngIf="showLoader">
+                    <div class="loader">
+                        <svg viewBox="25 25 50 50" class="circular">
+                            <circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="5" stroke-miterlimit="10" />
+                        </svg>
+                    </div>
+                </div>-->
+            </router-outlet>
+        </div>
+    </div>
+</div>

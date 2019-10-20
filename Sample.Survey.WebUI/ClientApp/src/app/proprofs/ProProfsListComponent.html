@@ -1,0 +1,19 @@
+<div style="width:100%">
+  <ngx-datatable class="material" [rows]="this.ProProfsModel.quizzes"
+                 [limit]="10"
+                 columnMode="force"
+                 footerHeight="auto"
+                 rowHeight="auto"
+                 [columns]="columns">
+    <ng-template #editButton let-row="row" let-value="value">
+      <div fxLayout="row" class="grid-actions" layout-fill fxLayoutAlign="center center">
+        <button [routerLink]="['/Quiz/Take', row.quizUniqueName]">Take Quiz</button>
+        &nbsp;
+      </div>
+    </ng-template>
+  </ngx-datatable>
+
+  <div style="width:100%">
+  <button matButton class="add-button" (click)="add($event)">Add</button>
+</div>
+</div>

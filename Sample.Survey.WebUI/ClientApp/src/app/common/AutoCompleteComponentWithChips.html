@@ -1,0 +1,20 @@
+﻿<mat-form-field [formGroup]="formGroup" class="{{cssClass}}">
+    <input matInput type="text" placeholder="{{placeholder}}"
+           [formControl]="formControl" [matAutocomplete]="auto" />
+</mat-form-field>
+<mat-autocomplete #auto="matAutocomplete" [displayWith]="_displayFn()">
+    <mat-option *ngFor="let option of _filteredOptions | async" [value]="option" (click)="onOptionSelect($event,option)">
+        <img *ngIf="option[imageSrc]" src="{{option[imageSrc]}}" [class]='imageClass' /> {{option[optionValue]}}
+    </mat-option>
+</mat-autocomplete>
+<div>
+    <mat-form-field>
+        <mat-chip-list #chipList [class]="chipClass" [aria-orientation]="chipOrientation">
+            <mat-chip *ngFor="let option of selectedChips" [selectable]="true"
+                      [removable]="removableChip" (remove)="remove(option)">
+                {{option[optionValue]}}
+                <mat-icon matChipRemove *ngIf="removableChip" class="btn-chip-close"></mat-icon>
+            </mat-chip>
+        </mat-chip-list>
+    </mat-form-field>
+</div>

@@ -1,0 +1,31 @@
+<div style="width:100%">
+
+
+  <ngx-datatable class="material fullscreen striped" [rows]="this.serviceDocument.dataProfile.dataList"
+                 [headerHeight]="50"
+                 [limit]="10"
+                 columnMode="force"
+                 [footerHeight]="50"
+                 rowHeight="auto"
+                 [columns]="columns"
+                 [scrollbarH]="true">
+    <ng-template #editButton let-row="row" let-value="value">
+      <div fxLayout="row" class="grid-actions" layout-fill fxLayoutAlign="center center">
+
+        <button mat-button class="fx-button" md-button
+                *fxPermission="this.serviceDocument;RowValue:row;Claim:'Open';ClaimType:'WorkflowClaim'"
+                [routerLink]="['/Declaration/Open', row.declarationsId]">Open
+        </button>
+        &nbsp;
+        <button mat-button class="fx-button mat-raised-button" *fxPermission="this.serviceDocument;RowValue:row;Claim:'Delete';ClaimType:'WorkflowClaim'"
+                (click)="Delete($event,row)">Delete</button>
+      </div>
+    </ng-template>
+  </ngx-datatable>
+
+  <mat-card-title fxLayout="row">
+    <div fxFlex="initial">Declaration card</div>
+    <div fxFlex fxLayoutAlign="end center">
+    <button matButton class="fx-button mat-raised-button" *fxPermission="this.serviceDocument;Claim:'Declaration New Claim';ClaimType:'WorkflowClaim'" (click)="add($event)">Add</button></div>
+  </mat-card-title>
+</div>

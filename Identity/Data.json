@@ -1,0 +1,354 @@
+{
+  "IdentityUser": [
+    {
+      "Id": "11a61418-4274-4ba0-8402-5bb00ee3e302",
+      "UserName": "jashokan@agility.com",
+      "NormalizedUserName": "JASHOKAN@AGILITY.COM",
+      "Email": "jashokan@agility.com",
+      "NormalizedEmail": "JASHOKAN@AGILITY.COM",
+      "EmailConfirmed": 1,
+      "SecurityStamp": "c3cfb043-1f48-487b-9d4b-4cc152d574ef",
+      "ConcurrencyStamp": "ea992032-097f-4120-b7d7-cf0d489b2cf7",
+      "PhoneNumber": null,
+      "PhoneNumberConfirmed": 0,
+      "TwoFactorEnabled": 0,
+      "LockoutEnd": null,
+      "LockoutEnabled": 1,
+      "AccessFailedCount": 0,
+      "CreatedDate": null,
+      "OrganizationId": 1,
+      "TenantId": 1,
+      "DeletedInd": 0,
+      "CreatedBy": null,
+      "ModifiedDate": null,
+      "ModifiedBy": null,
+      "UserProfileAsJson": "",
+      "IsActive": 1,
+      "PasswordHash": "AQAAAAEAACcQAAAAEAyeJlTCzRPREUxSO6037xfTdRwYkU4WFZ34Sel8x1oIM5SP1jRReC42Ws3eYdghcQ=="
+    }
+  ],
+  "Clients": [
+    {
+      "Id": 1,
+      "Enabled": 1,
+      "ClientId": "client",
+      "ProtocolType": "oidc",
+      "RequireClientSecret": 1,
+      "RequireConsent": 0,
+      "AllowRememberConsent": 1,
+      "IncludeUserClaimsInIdToken": 0,
+      "RequirePkce": 0,
+      "AllowPlainTextPkce": 0,
+      "AllowAccessTokensViaBrowser": 0,
+      "FrontLogoutSessionRequired": 1,
+      "BackLogoutSessionRequired": 1,
+      "AllowOfflineAccess": 0,
+      "IdentityTokenLifetime": 300,
+      "AccessTokenLifetime": 3600,
+      "AuthorizationCodeLifetime": 300,
+      "AbsoluteRefreshTokenLifetime": 2592000,
+      "SlidingRefreshTokenLifetime": 1296000,
+      "RefreshTokenUsage": 1,
+      "UpdateAcsTokenClaimsOnRefresh": 0,
+      "RefreshTokenExpiration": 1,
+      "AccessTokenType": 0,
+      "EnableLocalLogin": 1,
+      "IncludeJwtId": 0,
+      "AlwaysSendClientClaims": 0,
+      "ClientClaimsPrefix": "client_",
+      "Created": "04-APR-19",
+      "DeviceCodeLifetime": 300,
+      "NonEditable": 0
+    },
+    {
+      "Id": 2,
+      "Enabled": 1,
+      "ClientId": "ro.client",
+      "ProtocolType": "oidc",
+      "RequireClientSecret": 1,
+      "RequireConsent": 1,
+      "AllowRememberConsent": 1,
+      "IncludeUserClaimsInIdToken": 0,
+      "RequirePkce": 0,
+      "AllowPlainTextPkce": 0,
+      "AllowAccessTokensViaBrowser": 0,
+      "FrontLogoutSessionRequired": 1,
+      "BackLogoutSessionRequired": 1,
+      "AllowOfflineAccess": 0,
+      "IdentityTokenLifetime": 300,
+      "AccessTokenLifetime": 3600,
+      "AuthorizationCodeLifetime": 300,
+      "AbsoluteRefreshTokenLifetime": 2592000,
+      "SlidingRefreshTokenLifetime": 1296000,
+      "RefreshTokenUsage": 1,
+      "UpdateAcsTokenClaimsOnRefresh": 0,
+      "RefreshTokenExpiration": 1,
+      "AccessTokenType": 0,
+      "EnableLocalLogin": 1,
+      "IncludeJwtId": 0,
+      "AlwaysSendClientClaims": 0,
+      "ClientClaimsPrefix": "client_",
+      "Created": "04-APR-19",
+      "DeviceCodeLifetime": 300,
+      "NonEditable": 0
+    },
+    {
+      "Id": 3,
+      "Enabled": 1,
+      "ClientId": "MVCClient",
+      "ProtocolType": "oidc",
+      "RequireClientSecret": 1,
+      "ClientName": "MVC Client",
+      "RequireConsent": 0,
+      "AllowRememberConsent": 1,
+      "IncludeUserClaimsInIdToken": 0,
+      "RequirePkce": 0,
+      "AllowPlainTextPkce": 0,
+      "AllowAccessTokensViaBrowser": 1,
+      "FrontLogoutSessionRequired": 1,
+      "BackLogoutSessionRequired": 1,
+      "AllowOfflineAccess": 1,
+      "IdentityTokenLifetime": 300,
+      "AccessTokenLifetime": 3600,
+      "AuthorizationCodeLifetime": 300,
+      "AbsoluteRefreshTokenLifetime": 2592000,
+      "SlidingRefreshTokenLifetime": 1296000,
+      "RefreshTokenUsage": 1,
+      "UpdateAcsTokenClaimsOnRefresh": 0,
+      "RefreshTokenExpiration": 1,
+      "AccessTokenType": 0,
+      "EnableLocalLogin": 0,
+      "IncludeJwtId": 0,
+      "AlwaysSendClientClaims": 0,
+      "ClientClaimsPrefix": "client_",
+      "Created": "04-APR-19",
+      "DeviceCodeLifetime": 300,
+      "NonEditable": 0
+    },
+    {
+      "Id": 4,
+      "Enabled": 1,
+      "ClientId": "angular",
+      "ProtocolType": "oidc",
+      "RequireClientSecret": 0,
+      "ClientName": "angular",
+      "RequireConsent": 0,
+      "AllowRememberConsent": 1,
+      "IncludeUserClaimsInIdToken": 0,
+      "RequirePkce": 1,
+      "AllowPlainTextPkce": 0,
+      "AllowAccessTokensViaBrowser": 1,
+      "FrontLogoutSessionRequired": 1,
+      "BackLogoutSessionRequired": 1,
+      "AllowOfflineAccess": 0,
+      "IdentityTokenLifetime": 300,
+      "AccessTokenLifetime": 3600,
+      "AuthorizationCodeLifetime": 300,
+      "AbsoluteRefreshTokenLifetime": 2592000,
+      "SlidingRefreshTokenLifetime": 1296000,
+      "RefreshTokenUsage": 1,
+      "UpdateAcsTokenClaimsOnRefresh": 0,
+      "RefreshTokenExpiration": 1,
+      "AccessTokenType": 0,
+      "EnableLocalLogin": 1,
+      "IncludeJwtId": 0,
+      "AlwaysSendClientClaims": 0,
+      "ClientClaimsPrefix": "client_",
+      "Created": "04-APR-19",
+      "DeviceCodeLifetime": 300,
+      "NonEditable": 0
+    }
+  ],
+  "ApiResources": [
+    {
+      "Id": 1,
+      "Enabled": 1,
+      "Name": "apiclient",
+      "DisplayName": "My API",
+      "Created": "04-APR-19",
+      "NonEditable": 0
+    }
+  ],
+  "IdentityResources": [
+    {
+      "Id": 1,
+      "Enabled": 1,
+      "Name": "openid",
+      "DisplayName": "Your user identifier",
+      "Required": 1,
+      "Emphasize": 0,
+      "ShowInDiscoveryDocument": 1,
+      "Created": "04-APR-19",
+      "NonEditable": 0
+    },
+    {
+      "Id": 2,
+      "Enabled": 1,
+      "Name": "profile",
+      "DisplayName": "User profile",
+      "Description": "Your user profile information (first name, last name, etc.)",
+      "Required": 0,
+      "Emphasize": 1,
+      "ShowInDiscoveryDocument": 1,
+      "Created": "04-APR-19",
+      "NonEditable": 0
+    }
+  ],
+  "ApiScopes": [
+    {
+      "Id": 1,
+      "Name": "apiClient",
+      "DisplayName": "My API",
+      "Required": 0,
+      "Emphasize": 0,
+      "ShowInDiscoveryDocument": 1,
+      "ApiResourceId": 1
+    }
+  ],
+  "ClientGrantTypes": [
+    {
+      "Id": 1,
+      "GrantType": "client_credentials",
+      "ClientId": 1
+    },
+    {
+      "Id": 2,
+      "GrantType": "implicit",
+      "ClientId": 4
+    },
+    {
+      "Id": 3,
+      "GrantType": "password",
+      "ClientId": 2
+    },
+    {
+      "Id": 5,
+      "GrantType": "ClientCredentials",
+      "ClientId": 4
+    },
+    {
+      "Id": 6,
+      "GrantType": "password",
+      "ClientId": 4
+    },
+    {
+      "Id": 7,
+      "GrantType": "authorization_code",
+      "ClientId": 3
+    }
+  ],
+  "ClientPostLogoutRedirectUris": [
+    {
+      "Id": 1,
+      "PostLogoutRedirectUri": "http://localhost:5002/signout-callback-oidc",
+      "ClientId": 3
+    },
+    {
+      "Id": 2,
+      "PostLogoutRedirectUri": "http://10.0.75.1:61210/Landing",
+      "ClientId": 4
+    }
+  ],
+  "ClientRedirectUris": [
+    {
+      "Id": 1,
+      "RedirectUri": "http://localhost:57100/account/login",
+      "ClientId": 3
+    },
+    {
+      "Id": 2,
+      "RedirectUri": "http://localhost:4200/index.html",
+      "ClientId": 4
+    },
+    {
+      "Id": 3,
+      "RedirectUri": "http://10.0.75.1:61210/Landing",
+      "ClientId": 4
+    },
+    {
+      "Id": 5,
+      "RedirectUri": "http://10.0.75.1:57100/account/login",
+      "ClientId": 3
+    },
+    {
+      "Id": 8,
+      "RedirectUri": "http://localhost:8080/account/login",
+      "ClientId": 3
+    },
+    {
+      "Id": 9,
+      "RedirectUri": "http://localhost/FxVanilla50/login.aspx",
+      "ClientId": 3
+    },
+    {
+      "Id": 10,
+      "RedirectUri": "http://localhost:61210/Landing",
+      "ClientId": 4
+    }
+  ],
+  "ClientScopes": [
+    {
+      "Id": 1,
+      "Scope": "openid",
+      "ClientId": 3
+    },
+    {
+      "Id": 2,
+      "Scope": "apiClient",
+      "ClientId": 2
+    },
+    {
+      "Id": 3,
+      "Scope": "apiClient",
+      "ClientId": 1
+    },
+    {
+      "Id": 4,
+      "Scope": "openid",
+      "ClientId": 4
+    },
+    {
+      "Id": 5,
+      "Scope": "profile",
+      "ClientId": 4
+    },
+    {
+      "Id": 6,
+      "Scope": "apiClient",
+      "ClientId": 4
+    },
+    {
+      "Id": 7,
+      "Scope": "profile",
+      "ClientId": 3
+    },
+    {
+      "Id": 8,
+      "Scope": "apiClient",
+      "ClientId": 3
+    }
+  ],
+  "ClientSecrets": [
+    {
+      "Id": 1,
+      "Value": "K7gNU3sdo+OL0wNhqoVWhr3g6s1xYv72ol/pe/Unols=",
+      "Type": "SharedSecret",
+      "Created": "04-APR-19",
+      "ClientId": 3
+    },
+    {
+      "Id": 2,
+      "Value": "K7gNU3sdo+OL0wNhqoVWhr3g6s1xYv72ol/pe/Unols=",
+      "Type": "SharedSecret",
+      "Created": "04-APR-19",
+      "ClientId": 2
+    },
+    {
+      "Id": 3,
+      "Value": "K7gNU3sdo+OL0wNhqoVWhr3g6s1xYv72ol/pe/Unols=",
+      "Type": "SharedSecret",
+      "Created": "04-APR-19",
+      "ClientId": 1
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+﻿<div *ngIf="fxContext.IsAuthenticated">
+    <div fxLayout="row" fxLayoutWrap>
+        <div fxFlex="16.5" *ngFor="let childMenu of parentMenu" class="fx-sample-card">
+            <mat-card class="example-card">
+                <div fxLayout="column">
+                    <div class="fx-sample-card-header" fxLayoutAlign="center center">
+                        <p>{{childMenu.menuText}}</p>
+                        <a routerLink="{{childMenu.url}}" fxLayoutAlign="center center"><img src="../../images/card-doc-icon.png" /></a>
+                    </div>
+                    <div class="fx-sample-card-content">
+                        <p>{{childMenu.description}}</p>
+                        <div fxLayoutAlign="center center">
+                            <a routerLink="{{childMenu.url}}" fxLayoutAlign="center center" class="card-btn"> Demo</a>
+                        </div>
+                    </div>
+                </div>
+            </mat-card>
+
+        </div>
+
+       
+    </div>
+</div>

@@ -1,0 +1,19 @@
+<form class="padding-20" novalidate [formGroup]="quizForm" enctype="multipart/form-data">
+  <mat-card fxLayout="column" class="formcard" style="width:100%">
+    <mat-card-title> Cascading Auto complete </mat-card-title>
+    <div fxLayout="column" layout-wrap layout-padding class="layout-padding">
+      <mat-form-field class="fx-input name" autofocus>
+        <input matInput placeholder="Email Adress" formControlName="email" required>
+      </mat-form-field>
+      
+      <autocomplete fxFlex="49" [optionsData]="quizzes" [formGroup]="quizForm" ngDefaultControl
+                          optionKey="quizUniqueName" optionValue="quizName" [formControl]="quizForm.controls.quizId"
+                          placeholder="Select Quiz" class="fx-selectBox"></autocomplete>
+    </div>
+    <div fxLayout="row" class="padding-left-10 padding-right-10">
+      <button class="fx-button" id="save" mat-button (click)="save()">Save</button>
+      <button class="fx-button" mat-button id="cancel" (click)="cancel()">Cancel</button>
+    </div>
+  </mat-card>
+
+</form>

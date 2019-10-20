@@ -1,0 +1,4 @@
+﻿enum GroupOpEnum {
+    And,
+    Or
+}

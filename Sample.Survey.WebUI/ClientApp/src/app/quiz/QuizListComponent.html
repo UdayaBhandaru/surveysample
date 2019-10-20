@@ -1,0 +1,19 @@
+<div style="width:100%">
+<ngx-datatable class="material" [rows]="quizzes"
+                headerHeight="auto"
+               [limit]="10"
+               columnMode="force"
+               footerHeight="auto"
+               rowHeight="auto"
+               [columns]="columns"
+               [scrollbarV]="false">
+    <ng-template #editButton let-row="row" let-value="value">
+        <div fxLayout="row" class="grid-actions" layout-fill fxLayoutAlign="center center">
+            <button [routerLink]="['/Quiz/Open', row.id]">Open</button>
+        </div>
+    </ng-template>
+</ngx-datatable>
+<div style="width:100%">
+<button matButton class="add-button" [routerLink]="['/Quiz/New']">New</button>
+</div>
+</div>
