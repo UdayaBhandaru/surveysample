@@ -3,15 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29209.62
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Agility.LMS.WebUI", "Agility.LMS.WebUI\Agility.LMS.WebUI.csproj", "{926E8B04-02B9-4A00-BC6B-768BA103749B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "sample.survey.WebUI", "sample.survey.WebUI\sample.survey.WebUI.csproj", "{926E8B04-02B9-4A00-BC6B-768BA103749B}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Agility.LMS.Api", "Agility.LMS.Api\Agility.LMS.Api.csproj", "{6F00E145-E1E4-4A8C-AB89-4E7075948D5F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "sample.survey.Api", "sample.survey.Api\sample.survey.Api.csproj", "{6F00E145-E1E4-4A8C-AB89-4E7075948D5F}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Agility.LMS.Api.Integration.Test", "Agility.LMS.Api.IntegrationTest\Agility.LMS.Api.Integration.Test.csproj", "{5C9D941F-63DE-4A83-8B91-21D8CE55A7EA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "sample.survey.Api.Integration.Test", "sample.survey.Api.IntegrationTest\sample.survey.Api.Integration.Test.csproj", "{5C9D941F-63DE-4A83-8B91-21D8CE55A7EA}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Agility.LMS.Api.Test", "Agility.LMS.Api.Test\Agility.LMS.Api.Test.csproj", "{64822A97-C223-4177-9822-DD03BDC4DA25}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "sample.survey.Api.Test", "sample.survey.Api.Test\sample.survey.Api.Test.csproj", "{64822A97-C223-4177-9822-DD03BDC4DA25}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Agility.LMS.Library.MongoDB", "Agility.LMS.Library.MongoDB\Agility.LMS.Library.MongoDB.csproj", "{A373260A-91CE-4491-8452-8A80616676D1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "sample.survey.Library.MongoDB", "sample.survey.Library.MongoDB\sample.survey.Library.MongoDB.csproj", "{A373260A-91CE-4491-8452-8A80616676D1}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Identity.Service", "Identity\Identity.Service.csproj", "{4761E42E-2F26-44F2-A164-26189BF53086}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{A373260A-91CE-4491-8452-8A80616676D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A373260A-91CE-4491-8452-8A80616676D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A373260A-91CE-4491-8452-8A80616676D1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4761E42E-2F26-44F2-A164-26189BF53086}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4761E42E-2F26-44F2-A164-26189BF53086}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4761E42E-2F26-44F2-A164-26189BF53086}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4761E42E-2F26-44F2-A164-26189BF53086}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
